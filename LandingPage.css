@@ -1,0 +1,116 @@
+
+@font-face {
+    font-family: "pixeles";
+    src: url(./fonts/PressStart2P-Regular.ttf);
+}
+
+body {
+    background-image: url(./img/fondo.png) ;
+    background-repeat: no-repeat;
+    background-size:  cover ;
+    
+}
+
+.contact {
+    background-image:linear-gradient(rgb(114, 111, 111), rgb(192, 196, 195), rgb(114, 111, 111));;
+    padding: 0.4em;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.contact img{
+    width: 1.7em;
+    height: 1.7em;
+    
+
+}
+.contact #barraizquierda img {
+    margin: 0.2em 1em 0.2em 1em;
+    cursor: pointer;
+}
+
+.contact h3{
+    margin: 0 8%;
+    display: flex ;
+    align-items: center;
+}
+
+
+
+.menu {
+    background-image: linear-gradient(to right, rgb(87, 1, 145), rgb(129, 89, 2));
+    display: flex;
+    align-items: center;
+}
+
+
+
+#barraderecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logo h1 {
+    font-family: "pixeles";    
+    font-size: 1.2em;
+    color: rgb(172, 168, 168) ;
+    display: flex;
+    align-items: center;
+
+}
+
+#logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 4em;
+    width: 5em; 
+}
+
+#lista {
+    
+    width: 80%;
+    display: flex;    
+    align-items: center;      
+    justify-content: flex-end;  
+}
+
+
+#lista ul {
+    width: 76%;
+    list-style: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* esta parte es responsive para que se vea bien en los celulares*/    
+    padding-inline-end: 2em; 
+    padding-inline-start: 8em; 
+   
+    
+}
+
+#lista li {
+    font-family: "pixeles";
+    font-size: 14px;
+}
+
+#lista li:hover{
+    color: rgb(221, 195, 245);    
+    cursor: pointer;        
+
+}
+
+
+#buscar {   
+    width: 20%;
+    display: flex;    
+    align-items: center;
+    justify-content: flex-end;
+    padding-inline-end: 1em;
+} 
+
+#buscar img {
+    width: 1.7em;
+    height: 1.7em;
+    cursor: pointer;
+}
