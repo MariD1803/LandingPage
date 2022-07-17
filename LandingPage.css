@@ -1,7 +1,27 @@
+/* Globalea*/
+
+:root {
+  --grey: rgb(114, 111, 111);
+  --purple: rgb(87, 1, 145);
+  --orange: rgb(129, 89, 2);
+  --lightgrey:  rgb(192, 196, 195);
+  --bold: 900;
+  --large: 28px;
+  --medium: 24px;
+  --regular__medium: 21px;
+  --regular: 16px;
+  --small: 14px;
+  --extrasmalll: 12px;
+  --extrasmall: 10px;
+  --extraextrasmall: 8px;
+  --tiny: 6px;
+}
+
 @font-face {
   font-family: "pixeles";
   src: url(./fonts/PressStart2P-Regular.ttf);
 }
+
 
 body {
   margin: 0%;
@@ -11,34 +31,33 @@ main {
   display: flex;
   flex-direction: column;
 }
-.contact {
-  background-image: linear-gradient(
-    rgb(114, 111, 111),
-    rgb(192, 196, 195),
-    rgb(114, 111, 111)
-  );
-  padding: 0.4em;
-  display: flex;
-  justify-content: space-between;
-}
 
-.contact img {
-  width: 1.7em;
-  height: 1.7em;
-  margin: 0.2em 1em 0.2em 1em;
-}
+/*Clases*/
 
-.contact h3 {
-  margin: 0 8%;
-  display: flex;
-  align-items: center;
-}
+
+/*Navar*/
 
 .menu {
-  background-image: linear-gradient(to right, rgb(87, 1, 145), rgb(129, 89, 2));
+  background-image: linear-gradient(to right, var(--purple), var(--orange));
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  z-index: 99;
 }
+
+
+.checkbutton {
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin-left: 20rem;
+  margin-right: 0;
+  margin-right: 0.5rem;
+}
+
+/*Hero/Carrousel*/
 
 .hero {
   display: flex;
@@ -48,15 +67,21 @@ main {
   background-repeat: no-repeat;
   border-top: black 5px solid;
   border-bottom: black 5px solid;
+  height: 25rem;
+  margin-top: 4rem;
+  left: 0;
+  right: 0;
 }
 
+/*AboutUs*/
 .AboutUs {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 2% 30% 0 30%;
-  font-size:large;
-  text-indent: 2%;
+  padding: 2% 20% 0 20%;
+  font-size: large;
+  text-align: justify;
+  margin-bottom: 5%;
 }
 
 .AboutUs h1 {
@@ -66,163 +91,307 @@ main {
   text-align: center;
 }
 
-.juegos {
+.border_color {
+  height: 4px;
+  background-image: linear-gradient(to right, var(--purple), var(--orange));
+  width: 100%;
+}
+
+
+/*Cards*/
+
+.TodosLosCards {
   display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  column-gap: 4rem;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+ 
+}
+
+
+.cards h2 {
+  font-family: "pixeles";
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: var(--medium);
+  word-spacing: -10px;
+  gap: 1rem;
+}
+
+.cards h2 p {
+  background-image: linear-gradient(to right, var(--purple), var(--orange));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "pixeles";
+  font-size: var(--medium);
+  margin: 0;
+}
+.cards h3 {
+  font-size: var(--large);
+  text-align: center;
+  max-width: 300px;
+  margin-top: 0.3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  padding: 20px;
+  width: 20rem;
+  height: 20rem;
+}
+
+.card img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+  max-height: 100%;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.card p {
+  max-width: 300px;
+  margin-top: 0.2rem;
+  text-align: center;
+  font-size: var(--regular__medium);
+}
+
+.card_text {
+  max-height: 100%;
+  padding: 1rem;
+  height: 7rem;
+}
+
+
+/*Juegos */
+.titulos {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "pixeles";
+  padding: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--medium);
+}
+
+/*jUEGOS Rebaja*/
+
+
+.juegos__div {
+  max-width: 40rem;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
+.juegos {
+  gap: 10px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
 .juegos h3 {
   margin-bottom: 0;
+  margin-top: 0.1rem;
+}
+.juegos h4 {
+  margin-bottom: 0;
+  margin-top: 0.1rem;
 }
 
 .juegos h1 {
   margin-top: 0;
 }
 
-.juegos img{
-  width: 100%;
-  height: 200px;
+.juegos span {
+  font-size: var(--extrasmalll);
+}
+.juegos img {
+  width: 98%;
+  height: 120px;
+  margin: 0.2rem;
 }
 
 .juegos p {
   color: green;
-  font-size: large;
-  margin-bottom: 5px;
-  font-weight: bold;
+  font-size: var(--medium);
+  font-weight: var(--bold);
+  margin: 0.5rem 0 0 0;
+}
+
+.costo {
+  font-size: var(--small);
+}
+
+.costo span {
+  text-decoration-line: line-through;
+  color: var(--grey);
+}
+
+.texto {
+  max-height: 100%;
+  padding: 0.1rem;
+  height: 4.5rem;
+}
+
+.juego {
+  width: 100%;
+  border: black solid 2px;
+  padding: 1%;
+  margin-left: 1%;
+  box-shadow: 0 0 20px 2px rgb(0 0 0 / 30%);
+  border-radius: 1rem;
+  max-height: 19rem;
+  max-width: 10rem;
+}
+
+
+/*Juegos arcade*/
+
+.juegos__arcade__div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.juegos__arcade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
 
+.juego__arcade{
+  width: 100%;
+  border: black solid 2px;
+  padding: 1%;
+  margin-left: 1%;
+  box-shadow: 0 0 20px 2px rgb(0 0 0 / 30%);
+  border-radius: 1rem;
+  max-height: 25rem;
+  max-width: 22rem;
+}
+
+.juegos__arcade h3 {
+  margin-bottom: 0;
+  margin-top: 0.1rem;
+}
+
+.juegos__arcade h4 {
+  margin-bottom: 0;
+  margin-top: 0.1rem;
+}
+
+.juegos__arcade h1 {
+  margin-top: 0;
+}
+
+.juegos__arcade span {
+  font-size: var(--regular);
+}
+
+
+.juegos__arcade img {
+  width: 100%;
+  height: 200px;
+}
+
+.juegos__arcade p {
+  color: green;
+  font-size: var(--medium);
+  font-weight: var(--bold);
+  margin: 0.5rem 0 0 0;
+}
+
+.carrito {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .carrito img {
   width: 1.7em;
   height: 1.7em;
-  margin-inline-start: 80%;
+  padding-right: 1%;
 }
 
-.costo span{
-  text-decoration-line: line-through;
-  color: grey;
+.div_text {  
+  max-height: 100%;
+  padding: 0.1rem;
+  height: 6rem;
+  font-size: var(--regular__medium)
 }
 
-#pacman {
-  display: flex;
-  flex-direction: column;
-  width: 15%;
-  height: 50%;
-  border: black solid 2px;
-  padding: 1%;
-  margin-left: 3%;
+.costo__arcade {
+  font-size: var(--regular__medium);
 }
 
-#sonic {
-  display: flex;
-  flex-direction: column;
-  width: 15%;
-  height: 50%;
-  border: black solid 2px;
-  padding: 1%;
-  margin-left: 3%;
+/*Contacto- Footer*/
+
+.contact h1 {
+  margin: 0;
+}
+.contact img {
+  width: 1.7em;
+  height: 1.7em;
+ 
 }
 
-#mario {
-  display: flex;
-  flex-direction: column;
-  width: 15%;
-  height: 50%;
-  border: black solid 2px;
-  padding: 1%;
-  margin-left: 3%;
-}
-
-#rebajas {
-  padding-left: 5%;
-  padding-right: 5% ;
-  font-family: "pixeles";
-  padding: auto; 
-  display: flex;
-  flex-direction: row;
-  align-items: center;  
-  font-size: 16px;
-}
-
-#rebajas p {
-  border-top: 3px grey solid;
-  height: 1px;
-  background: #ebebeb;
-  display: block;
-  position: relative;
-  top: 1px;
-  width: 100%;
-  margin-left: 2%;
-}
-#TextoDePortada {
-  font-family: "pixeles";
-  max-width: 60%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 2%;
-  margin-right: 7%;
-}
-
-#TextoDePortada h1 {
-  font-size: 26px;
-  background-image: linear-gradient(135deg, #d363f8 0%, #f8fa6d 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  color: white;
-}
-
-
-
-#ImagenDePortada img {
-  height: 280px;
-  width: 280px;
-  padding: 0%;
-  margin: 0%;
-}
-
-#TextoDePortada button {
-  background-image: linear-gradient(to right, rgb(87, 1, 145), rgb(129, 89, 2));
-  color: white;
-  cursor: pointer;
-  padding: 1em;
-  width: 15%;
-  margin-left: 30%;
-  margin-top: 3%;
-  box-shadow: 10px 5px 5px black;
-  font-family: "pixeles";
-}
-
-#barraizquierda {
-  margin-right: 10%;
+.contact h3 {
+  margin: 0.8rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-inline-end: 10%;
 }
 
-#barramedia {
+.contacto {
   display: flex;
-  justify-content: flex-end;
-  font-size: 14px;  
-  margin-inline-end: auto; 
+  flex-direction: row;
   align-items: center;
+  gap: 30px;
 }
 
-#barraderecha {
-  display: flex;
-  justify-content: flex-end;
-  cursor: pointer;    
-  align-items: center;
-}
 
-#barraderecha input {
-  border-radius: 3px;
-  height: 1.5em;
-} 
+
+/*ID*/
+
+/*Navar*/
+
+#check{
+  display: none;
+}
 
 #logo h1 {
   font-family: "pixeles";
@@ -256,14 +425,22 @@ main {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content:  space-around;
 }
 
-#lista li {
+#lista a li{
   font-family: "pixeles";
   font-size: 14px;
-  margin-right: 8%;  
-  color: white;
+  margin-right: 8%;
+  color: white;  
+  text-decoration: none;
+  
+}
+
+
+#lista a {
+  text-decoration: none;
+  
 }
 
 #lista li:hover {
@@ -276,11 +453,1181 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-} 
+}
 
 #login img {
   width: 2em;
-  height: 2em;  
+  height: 2em;
   margin: 0.2em 1.5em 0.2em 1.5em;
   cursor: pointer;
 }
+
+/*Section Juegos*/
+
+
+#juegorebaja {  
+  border: black solid 2px;
+  padding: 1%;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  max-width: 25rem;
+  max-height: 40rem;
+}
+
+#juegorebaja__img {
+  width: 100%;
+  height: 300px;
+}
+
+
+
+#juegorebaja span {
+  font-size: var(--regular);
+}
+
+#rebajas p {
+  height: 4px;
+  background-image: linear-gradient(to right, rgb(87, 1, 145), rgb(129, 89, 2));
+  width: 100%;
+  margin-left: 2%;
+}
+
+
+/*Hero/Carrousel*/
+
+#TextoDePortada {
+  font-family: "pixeles";
+  max-width: 60%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin-right: 7%;
+}
+
+#TextoDePortada h1 {
+  font-size: 26px;
+  background-image: linear-gradient(135deg, #d363f8 0%, #f8fa6d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+}
+
+#ImagenDePortada img {
+  height: 280px;
+  width: 280px;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+
+#TextoDePortada button {
+  background-image: linear-gradient(to right, var(--purple), var(--orange));
+  color: white;
+  cursor: pointer;
+  padding: 1em;
+  width: 15%;
+  margin-left: 30%;
+  margin-top: 3%;
+  box-shadow: 10px 5px 5px black;
+  font-family: "pixeles";
+}
+
+/*Footer */
+
+#redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+#redes img{
+  margin: 1rem 0.5rem;
+}
+
+#titulo{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+#mapa {
+  width: 30rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contacto_div {
+  font-size: var(--regular);
+  margin: 0;
+}
+
+.contact h1 {
+  font-size: var(--large);
+}
+
+/* Media queries */
+
+
+@media screen and (max-width: 5000px) {
+  /*Navar*/
+
+  #lista a li {
+    font-size: var(--medium);
+    list-style: none;
+  }
+
+  #logo h1 {
+    font-size: var(--medium);
+  }
+
+
+  /*Hero */
+
+  .AboutUs p {
+    font-size: var(--regular__medium);
+  }
+
+  #ImagenDePortada img:hover {  
+    transition-duration: 2s;
+    transform: rotate(1turn);
+  }
+
+  #ImagenDePortada img {
+    margin-right: 4rem;
+    margin-top: 4rem;
+  }
+
+
+  /*Juegos Arcade y Juegos Rebajas*/
+
+  .juego__arcade {
+    max-height: 30rem;
+    max-width: 25rem;
+  }
+
+  .juegos__arcade__div {
+    width: 70%;
+
+  }
+  .juegos__div {
+    max-width: 50rem;
+  }
+
+  .juego {   
+    max-height: 25rem;
+    max-width: 19rem;
+  }
+
+
+  .texto {
+    height: 7.5rem;
+
+  }
+
+  .texto h4 {
+    font-size: var(--medium);
+  }
+
+  .texto span {
+    font-size: var(--regular__medium);
+  }
+
+  .costo {
+    font-size: var(--medium);
+  } 
+
+  .costo span {
+    font-size: var(--medium);
+  }
+
+  #juegorebaja {
+    max-width:  30rem;
+    max-height: 50rem;
+  }
+
+  #juegorebaja span {
+    font-size: var(--medium);
+  }
+
+  .div_text span {
+    font-size: var(--regular__medium);
+
+  }
+  /*Footer*/
+
+  #redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  #redes img{
+    margin: 2rem 1rem;
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  #titulo{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  
+  #mapa {
+    width: 60rem;
+    height: 20rem;
+  }
+
+  .contact h1 {
+    font-size: var(--large);
+  } 
+
+  .contact {
+    width: 800px;
+  }
+  .contacto_div {
+    font-size: var(--regular__medium);
+  }
+
+
+}
+ 
+
+@media screen and (max-width: 1650px) {
+  
+ /*Navar*/
+
+  #lista a li {
+   font-size: var(--regular);
+  }
+
+  #logo h1 {
+   font-size: var(--medium);
+  }
+
+  /*cARD*/
+
+  .card_text {
+    padding: 0;
+  }
+
+
+  /*Footer*/
+
+  #redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  #redes img{
+    margin: 1rem 0.5rem;    
+    height: 2rem;
+    width: 2rem;
+
+  }
+  
+  #titulo{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+
+  #mapa {
+    width: 40rem;
+    height: 20rem;
+  }
+
+  .contact h1 {
+    font-size: var(--medium);
+  } 
+
+  .contact {
+    width: 600px;
+  }
+  .contacto_div {
+    font-size: var(--regular);
+  }
+  
+  
+
+
+}
+
+
+@media screen and (max-width: 1295px) {
+  
+  /*Navar*/
+ 
+  #lista a li {
+   font-size: var(--regular);
+  }
+ 
+  #logo h1 {
+   font-size: var(--regular__medium);
+  }
+ 
+  /*Card*/
+  .cards h2 {
+    font-size: var(--regular__medium);
+    word-spacing: -16px;
+  }
+
+  .card_text {
+    padding: 0;
+  }
+  /*Juegos Arcade y Juegos Rebajas*/
+
+  .juego__arcade {
+    max-height: 25rem;
+    max-width: 20rem;
+  }
+
+  .juegos__arcade__div {
+    width: 70%;
+
+  }
+  .juegos__div {
+    max-width: 36rem;
+  }
+
+  .juego {   
+    max-height: 22rem;
+    max-width: 16rem;
+  }
+
+
+  .texto {
+    height: 5.5rem;
+
+  }
+
+  .texto h4 {
+    font-size: var(--regular);
+  }
+
+  .texto span {
+    font-size: var(--regular);
+  }
+
+  .costo {
+    font-size: var(--regular);
+  } 
+
+  .costo span {
+    font-size: var(--regular);
+  }
+
+  #juegorebaja {
+    max-width: 25rem;
+    max-height: 40rem;
+  }
+
+  #juegorebaja span {
+    font-size: var(--regular);
+  }
+
+  .div_text span {
+    font-size: var(--regular);
+
+  }
+ 
+ 
+   /*Footer*/
+ 
+   #redes {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     margin-top: 2rem;
+   }
+ 
+   #redes img{
+     margin: 1rem 0.5rem;    
+     height: 2rem;
+     width: 2rem;
+ 
+   }
+      
+   #footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-bottom: 3rem;
+     margin-top: 3rem;
+   }
+ 
+   #mapa {
+     width: 40rem;
+     height: 20rem;
+   }
+ 
+   .contact h1 {
+     font-size: var(--medium);
+   } 
+ 
+   .contact {
+     width: 600px;
+   }
+   .contacto_div {
+     font-size: var(--small);
+   }
+   
+   
+ 
+ 
+ }
+ 
+
+ 
+@media screen and (max-width: 1075px) {
+  
+  /*Navar*/ 
+ 
+ 
+  #lista a li {
+   font-size: var(--small);
+  }
+ 
+  #logo h1 {
+   font-size: var(--regular);
+   
+  }
+
+  #login img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.2em 1em 0.2em 1em;
+    cursor: pointer;
+  }
+
+  /*Hero*/
+
+  #ImagenDePortada img {
+    margin-right: 3rem;
+    margin-top: 3rem;
+    width: 250px;
+  }
+
+  #TextoDePortada  {
+    max-width: 50%;
+    margin-right: 5%;
+  }
+
+  #TextoDePortada h3 {
+    font-size: var(--regular);
+  }
+
+  #TextoDePortada p {
+    font-size: var(--regular);
+  }
+
+  #TextoDePortada button {
+    width: 25%; 
+}
+ 
+  /*Card*/
+  .cards h2 {
+    font-size: var(--small);
+    word-spacing: 0px;
+  }
+
+  .cards h2 p{
+    font-size: var(--small);
+  }
+
+  .cards  h3 {
+    font-size: var(--regular);
+  }
+
+  .card p {
+    font-size: var(--regular);
+  }
+
+  .card_text {
+    padding: 1rem;
+    height: 9rem;
+  }
+
+  /*Juegos Arcade y Juegos Rebajas*/
+
+  .precio p {
+    font-size: var(--regular__medium);
+  }
+
+  .div_text {
+    height: 5rem;
+    font-size: var(--regular);
+  }
+
+  .juego__arcade {
+    max-height: 25rem;
+    max-width: 18rem;
+  }
+
+  .juego__arcade {
+    max-height: 25rem;
+    max-width: 20rem;
+  }
+
+  .juego__arcade p {
+    font-size: var(--regular);
+  }
+
+  .juego {   
+    max-height: 20rem;
+    max-width: 13rem;
+  }
+  .costo span {
+    font-size: var(--regular);
+  }
+
+  .costo__arcade {
+    font-size: var(--regular);
+  }
+  
+
+  .div_text span {
+    font-size: var(--small);
+
+  }
+
+  #juegorebaja {
+    max-width: 22rem;
+    max-height: 40rem;
+  }
+
+  #juegorebaja span {
+    font-size: var(--regular);
+  }
+ 
+ 
+   /*Footer*/
+ 
+   
+   #redes img{
+     margin: 0.5rem 0.5rem;    
+     height: 2rem;
+     width: 2rem;
+ 
+   }
+    
+   #mapa {
+     width: 40rem;
+     height: 20rem;
+     margin-right: 3rem;
+   }
+ 
+   
+ 
+ 
+ }
+
+
+@media screen and (max-width: 1000px) {
+
+  /*Navar*/
+
+  #lista a li {
+    font-size: var(--extrasmalll);
+  }
+
+  /*Hero*/
+
+  .AboutUs p {
+    font-size: var(--regular);
+  }
+
+  #TextoDePortada h1 {
+    font-size: var(--regular__medium);
+  }
+
+  #TextoDePortada h3 {
+    font-size: var(--regular);
+  }
+
+  #TextoDePortada p {
+    font-size: var(--regular);
+  }
+  /*Card */
+
+  .card_text {
+    padding: 0;
+  }
+  /*Juegos Rebajas y Juegos Arcade*/
+
+  .juego__arcade{
+    max-width: 18rem;
+  }
+
+  .juegos__div {
+    max-width: 33rem;
+  }
+
+  #juegorebaja {
+    max-width: 20rem;
+    max-height: 38rem;
+  }
+
+  .titulos {
+    font-size: var(--regular__medium);
+    margin-bottom: 2rem;
+  }
+
+  #redes img {
+    margin: 0.3rem 0.3rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  #juegorebaja {
+    max-width: 18rem;
+    max-height: 35rem;
+  }
+  .juego {
+    max-height: 20rem;
+    max-width: 11rem;
+  }
+  .juegos__div {
+    max-width: 28rem;
+  }
+
+  .juegos__arcade__div{
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width:800px) {
+
+  /*Nav*/
+  #lista a li {
+    font-size: var(--extrasmalll);
+  }
+  
+  #logo h1 {
+    font-size: var(--small);
+  }
+  .cards h2 {
+    font-size: var(--small);
+    word-spacing: -3px;
+  }
+
+  #login img {
+    margin: 0.2em 0.5em 0.2em 0.5em;
+  }
+
+  #lista ul {
+    padding-inline-start: 30%;
+  }
+
+    /*Hero*/
+
+  .titulos {
+    font-size: var(--regular);
+    margin-bottom: 2rem;
+  }
+  #juegorebaja {
+    max-width: 16rem;
+  }
+  .juego__arcade {
+    max-width: 16rem;
+  }
+
+  /*Cards*/
+
+  .cards h2 {
+    font-size: var(--extrasmalll);
+  }
+
+  .cards h2 p {
+    font-size: var(--extrasmalll);
+  }
+
+  /*Footer*/
+
+  .contact {
+    width: 28rem;
+  }
+
+  .contact h1 {
+    font-size: var(--regular);
+  }
+  .contacto_div {
+    font-size: var(--extraextrasmall);
+  }
+  #footer {
+    gap: 20px;
+  }
+  #mapa {
+    width: 40rem;
+    height: 15rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width:700px) {
+  /*Nav*/
+  #logo img {
+    height: 3rem;
+    width: 3rem;
+  }
+  #logo h1 {
+    font-size: var(--extrasmalll);
+  }
+  
+  #lista a li {
+    font-size: var(--extraextrasmall);
+  }
+
+  #login img {
+    margin: 0.1em 0.5em;    
+    height: 1rem;
+    width: 1rem;
+  }
+
+  /*Hero*/
+
+  .hero {
+    height: 17rem;
+  }
+
+  #ImagenDePortada img {
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    width: 150px;
+    height: 150px;
+  }
+
+  #TextoDePortada h1{
+    font-size: var(--small);
+
+  }
+
+  #TextoDePortada h3{
+    font-size: var(--extrasmalll);
+    
+  }
+
+  #TextoDePortada p{
+    font-size: var(--extrasmalll);
+    
+  }
+  #TextoDePortada button {
+    
+    font-size: var(--extraextrasmall);
+  }
+
+  /*AboutUs*/
+
+  .AboutUs h1 {
+    font-size: var(--small);
+  }
+
+  .AboutUs p {
+    font-size: var(--extrasmalll);
+  }
+
+  /*Card*/
+
+  .cards h2 {
+    font-size: var(--extrasmall);
+    word-spacing: 0;
+  }
+
+  .cards h2 p {
+    font-size: var(--extrasmall);
+  }
+
+  .card img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .card_text {
+    padding: 1rem;
+    height: 6rem;
+  }
+
+
+  .card {
+    margin: 1.5rem 0;
+    padding: 10px;
+    width: 18rem;
+    height: 14rem;
+  }
+
+  .card p {
+    font-size: var(--small);
+  }
+
+
+  /*Juegos*/
+
+  .juegos {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .div_text {
+    height: 6.5rem;
+  }
+
+  .div_text h3 {
+    font-size: var(--small);
+  }
+  
+  .div_text span {
+    font-size: var(--small);
+  }
+
+  .juegos p {
+    font-size: var(--small);
+  }
+
+  .juego__arcade {
+    max-width: 11rem;
+  }
+
+  #juegorebaja {
+    width: 100%;
+    border: black solid 2px;
+    padding: 1%;
+    margin-left: 1%;
+    box-shadow: 0 0 20px 2px rgb(0 0 0 / 30%);
+    border-radius: 1rem;    
+    height: 26rem;
+    max-width: 25rem;
+  }
+
+  #juegorebaja .juegorebaja_img {
+    
+    width: 98%;
+    height:  13rem;
+    margin: 0.2rem
+  }
+  
+
+  .juegos__arcade__div {
+    width: 80%;
+  }
+
+  /*Footer*/
+  #footer {
+    gap: 15px;
+  }
+
+  #mapa {
+    margin-right: 1.5rem;
+  } 
+}
+
+
+@media screen and (max-width: 555px) {
+  /*Hero*/
+
+  .hero {
+    height: 13rem;
+  }
+
+  #TextoDePortada h1{
+    font-size: var(--extrasmall);
+
+  }
+
+  #TextoDePortada h3{
+    font-size: var(--extraextrasmall);
+    
+  }
+
+  #TextoDePortada p{
+    font-size: var(--extraextrasmall);
+    
+  }
+  #TextoDePortada button {
+    
+    font-size: var(--tiny);
+  }
+
+  #ImagenDePortada img {
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  /*Card*/
+
+  .cards h2 {
+    font-size: var(--extraextrasmall);
+    word-spacing: 0;
+  }
+
+  .cards h2 p{
+    font-size: var(--extraextrasmall);
+    word-spacing: 0;
+  }
+
+  .card h3 {
+    font-size: var(--extrasmall);
+  }
+  .card p {
+    font-size: var(--extrasmall);
+  }
+
+  .titulos {
+    font-size: var(--small);
+  }
+
+  /*jUEGOS*/
+
+  .juego__arcade {
+    max-width: 11rem;
+  }
+
+  .div_text span {
+    font-size: var(--extrasmalll);
+  }
+
+  .div_text {
+    height: 6.5rem;
+  }
+
+  .juegos__div {
+    gap: 0px;
+  }
+
+    /*Footer*/
+    
+  .contact {
+    width: 18rem;
+  }
+
+  .contacto {
+    gap: 0px; 
+    display: block;
+  }
+
+
+
+}
+
+
+
+@media screen and (max-width: 491px) {
+
+  /*Nav*/
+
+  a li:hover{
+    background: none;
+    transition: 1s;
+  }
+
+  .checkbutton{
+    display: block;
+    margin-right: 0;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  #lista ul {
+    padding-inline-start: 0%;
+    width: 100%; 
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 13rem;
+    top: 0;
+    margin-top: 4rem;    
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: black 5px solid;     
+    border-top: black 5px solid; 
+  }
+  
+  #lista a li {
+    font-size: var(--regular);
+    
+  }
+
+  #lista {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 0.5em;
+  }
+
+  
+  #login img {
+    margin: 0.1em 0.5em;
+    height: 1rem;
+    width: 1rem;
+  }
+
+  ul{
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-image: url(./img/fondomario.png);
+    top: 80px;
+    left: -100%;
+    transition: all .5s;
+ }
+  nav ul li{
+    margin: 20px 0;
+ }
+  nav ul li a {
+    font-size: 15px;
+ }
+  /*Juegos*/
+  .juegos__div {
+    max-width: 40rem;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .juego {
+    max-width: 16rem;
+    height: 20rem;
+  }
+
+  .juego__arcade {
+    max-width: 16rem;
+  }
+  
+  .div_text {
+    height: 4.5rem;
+  }
+  
+  #juegorebaja {
+    height: 20rem;
+    max-width: 16rem;
+  }
+
+  #juegorebaja .juegorebaja_img {
+    width: 98%;
+    height: 136px;
+    margin: 0.2rem;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 480px) {
+
+  /*Nav*/
+  html {
+    width: 100%;
+    position: absolute;
+  }
+
+  #logo h1 {
+    font-size: var(--extraextrasmall);
+  }
+
+  .checkbutton{    
+  margin-left: 3rem;
+  margin-right: 0;
+  margin-right: 0.5rem;
+  }
+
+  #lista{    
+    display: block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  
+  /*Nav*/
+  html {
+    width: 100%;
+    position: absolute;
+  }
+
+  #lista {
+    display: block;
+    width: 13rem;
+  }
+
+  #login {
+    margin: 0;
+  }
+
+  /*Hero*/
+
+  #TextoDePortada button {
+    width: 44%;
+    margin-left: 20%;
+  }
+
+  /*Card*/
+
+  .cards h2 {
+    font-size: var(--tiny);
+    word-spacing: -2px;
+    gap: 0.5rem;
+  }
+
+  .cards h2 p {
+    font-size: var(--tiny);
+  }
+
+  .TodosLosCards {
+   gap: 0;
+   column-gap: 0;
+  }
+  .titulos {
+    font-size: var(--extrasmall);
+  }
+  .cards h3 {
+    font-size: var(--extrasmall);
+  } 
+
+}
+
+
+ 
+
+
+

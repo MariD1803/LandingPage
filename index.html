@@ -4,54 +4,38 @@
     <meta charset="UTF-8" />
     <title>LandingPageMD</title>
     <link rel="stylesheet" href="LandingPage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   </head>
-  <body>
-    <header class="contact">
-      <div id="barraizquierda">
-        <a href="https://instagram.com">
-          <img src="./img/instagram.png" alt="instagram" />
-        </a>
-        <a href="https://es-la.facebook.com/">
-          <img src="./img/facebook.png" alt="facebook"
-        /></a>
-      </div>
-      <div id="barramedia">
-        <h3>
-          <img
-            src="./img/telefono-inteligente.png"
-            alt="telefono"
-          />+5491176542317
-        </h3>
-        <h3>
-          <img src="./img/sobre.png" alt="correo" />
-          mariangeldiazv2011@gmail.com
-        </h3>
-      </div>
-      <div id="barraderecha">
-        <input type="text" placeholder="Buscar" />
-        <img src="./img/busqueda-corazon.png" alt="buscador" />
-      </div>
-    </header>
+  
+  <body>    
     <nav class="menu">
       <div id="logo">
         <img src="./img/logodef.png" alt="Logo" />
         <h1>RetroGames</h1>
-      </div>
+      </div> 
       <div id="lista">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbutton">
+          <i class="fa-solid fa-bars"></i>
+        </label>
         <ul>
-          <li>Gaming <a href=""></a></li>
-          <li>Acessorios <a href=""></a></li>
-          <li>Reparaciones <a href=""></a></li>
+          <a href="#gamming"><li>Gaming </li></a>
+          <a href=""><li>Acessorios</li></a>
+          <a href="#footer"><li>Reparaciones </li></a>
         </ul>
       </div>
       <div id="login">
-        <a href="carrito">
+        <a href="carrito" id="carrito">
           <img src="./img/carrito-de-compras.png" alt="carrito"
         /></a>
         <a> <img src="./img/usuario.png" alt="usuario" /> </a>
       </div>
     </nav>
     <main>
+     <!--  Hero/ Carrousel -->
       <section class="hero">
         <div id="TextoDePortada">
           <h1>Agregando el Pasado a tu Futuro</h1>
@@ -60,88 +44,434 @@
             Una sección interactiva donde podras disfrutar de todo tipo de
             juegos retro y sus respectivas consolas
           </p>
-          <button>LEER MAS <a href="linkto"></a></button>
+          <a href="#cards_contenido"><button>LEER MAS </button></a>
         </div>
         <div id="ImagenDePortada">
           <img src="./img/super-mario-bros-3.png" alt="mariobros" />
         </div>
       </section>
-      <section class="AboutUs">
-        <h1>Acerca de Nosotros</h1>
-        <p>
-          RetroGames es un pequeño equipo de personas que han estado en la
-          industria del juego desde 2013, y tenemos experiencia en la venta de
-          consolas, contrles y otro tipo de accesorios. Brindamos una solución
-          para la busqueda inteligente de todo tipo de consolas y videojuegos,
-          que agiliza y conserva el mercado. Te acompañamos en cada proceso de
-          tu negociación, sea la compra, venta o reparación de artículos desde
-          el primer contacto
-        </p>
+
+      <!-- Acerca de nosotros -->
+      <section class="About">
+        <div class="AboutUs" >
+          <h1>Acerca de Nosotros</h1>
+          <p>
+            RetroGames es un pequeño equipo de personas que han estado en la
+           industria del juego desde 2013, y tenemos experiencia en la venta de
+            consolas, controles y otro tipo de accesorios. Brindamos una solución
+            para la busqueda inteligente de todo tipo de consolas y videojuegos,
+           que agiliza y conserva el mercado. Te acompañamos en cada proceso de
+           tu negociación, sea la compra, venta o reparación de artículos desde
+           el primer contacto <br />
+           Nuestros arcades son muebles 100% originales de la época de
+           fabricación propio, y actualmente seguimos desarrollando nuevos
+           modelos. Todos son aptos para uso comercial en cuanto a su duración de
+           estructura y componente. Contamos con un sistema multijuegos con todos
+            los clásicos de los años 70 en adelante! <br />
+            Las consolas son ideales para hogares, espacios reducidos, alquileres,
+            eventos y hasta para uso comercial. Cuentan con miles de juegos y solo
+           requieren conexion HDMI a un televisor.
+         </p>   
+        </div>
+        <div class="border_color">
+          <p></p>
+        </div>     
+      </section>
+      <!-- Cars -->
+     <section class="cards" id="cards_contenido">
+        <h2>No te quedes sin disfrutar la experiencia de vivir <p>Retro</p></h2>
+        <h3>
+          Nuestros beneficios son: 
+        </h3>
+          <div class="TodosLosCards">
+            <div class="card">
+              <img src="./img/visa.png" alt="medios de pago">
+              <div class="card_text">
+                <h3>Cuotas sin interes</h3>         
+                 <p>
+                  En productos seleccionados
+                </p>
+              </div>
+            </div>
+         
+            <div class="card">
+              <img src="./img/producto.png" alt="Envios">
+              <div class="card_text">
+                <h3>¡Envios a todo el país! </h3>
+                <p>
+                  Retiros gratis en la tienda
+                </p>
+              </div>
+           </div>
+
+            <div class="card">
+              <img
+               src="./img/soporte.png"
+               alt="soporte"
+              />
+              <div class="card_text">
+                <h3>Soporte Técnico</h3>
+                <p>
+                 En todo tipo de consolas
+                </p>
+              </div>
+            </div>
+          </div>
+      </section> 
+      <!-- Juegos Rebajas -->
+
+      <!-- Titulo -->
+      <section id="gamming">
+        <div  class="titulos">
+          <h1>Ofertas</h1>
+          <p class="border_color"></p>
+        </div>
+        
+        <div class="juegos">
+          <!-- Rebaja grande -->
+          <div id="juegorebaja">
+            <div> 
+              <img class="juegorebaja_img" src="./img/arcade.png" alt="arcade" id="juegorebaja__img">
+              <div class="div_text" >
+                <h3>Arcade Original</h3>
+                <span>2600 juegos incluidos Medidas: 160x60x70 Peso: 80 kg Incluye: Manual de uso</span>
+              </div>
+              <div>
+                <p>Disponible</p>
+                <h1 class="costo">$100000 <span>$109563</span></h1>
+                <div class="carrito">
+                 <a href="#carrito"><img src="./img/carrito-de-compras.png" alt="carrito" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Juegos parte pequeña -->
+
+          <div class="juegos__div">    
+
+
+            <!-- Pacman -->        
+            <div class="juego" >
+              <img src="./img/Pac-man-logo.png" alt="pacman" />
+              <div class="texto">
+                <h4>Pac-Man 1980</h4>
+                <span>Atari 2600, Arcade, Android, Microsoft Windows</span>
+              </div>
+               <div>
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo">$4000 <span>$5100</span></h1>
+                 <div class="carrito">
+                    <a href="carrito"
+                      ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                    </a>
+                 </div>
+                </div>
+              </div>  
+            </div>    
+
+            <!-- Sonic -->
+            <div class="juego">
+              <img src="./img/sonic.png" alt="sonic" />
+
+              <div class="texto">
+                <h4>Sonic the Hedgehog 1991</h4>
+                <span>Android, Mega Drive, Nintendo Switch, Game Boy Advance</span>
+              </div>
+              <div>
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo">$2100 <span>$3500</span></h1>
+                  <div class="carrito">
+                    <a href="carrito"
+                     ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Mario -->
+            <div class="juego">
+             <img src="./img/mario.png" alt="mario" />
+              <div class="texto">
+               <h4>Super Mario Bros 1985</h4>
+               <span>Nintendo Switch, Nintendo 3DS, Wii, Game Boy Advance</span>
+              </div>
+              <div>
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo">$3100 <span>$5500</span></h1>
+                  <div class="carrito">
+                    <a href="carrito"
+                    ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Contra -->
+            <div class="juego">
+             <img src="./img/contra.png" alt="contra" />
+              <div class="texto">
+                <h4>Contra 1988</h4>
+               <span>Nintendo Entertainment System, Nintendo Switch, Microsoft Windows</span>
+              </div>
+              <div>
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo">$2000 <span>$2300</span></h1>
+                  <div class="carrito">
+                    <a href="carrito"
+                    ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Donkey -->
+            <div class="juego">
+              <img src="./img/donkey.png" alt="donkey" /> 
+              <div class="texto">
+                 <h4>Donkey Kong 1981</h4>
+                <span>Nintendo, Atari, Nintendo Switch, Microsoft Windows</span>
+              </div>
+              <div>
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo">$3000 <span>$4300</span></h1>
+                  <div class="carrito">
+                   <a href="carrito"
+                   ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                   </a>
+                 </div>
+               </div>
+             </div>
+            </div>
+
+            <!-- Mortal Kombat -->
+            <div class="juego">
+              <img src="./img/mortal.png" alt="mortal" /> 
+              <div class="texto">
+                 <h4>Mortal Kombat 1992</h4>
+                <span>Arcade, Microsoft Windows, Master System</span>
+              </div>
+               <div>
+                  <div class="precio">
+                   <p>Disponible</p>
+                   <h1 class="costo">$5000 <span>$5300</span></h1>
+                   <div class="carrito">
+                     <a href="carrito"
+                     ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                     </a>
+                   </div>
+                  </div>
+                </div>
+              </div>          
+            </div>         
+          </div>
+        </div>
       </section>
 
       <section>
-        <div id="rebajas">
-          <h1>Ofertas</h1>
-          <p></p>
+        <!-- Titulo -->
+        <div  class="titulos">
+          <h1>Arcades</h1>
+          <p class="border_color"></p>
         </div>
-        <div class="juegos">
-          <div id="pacman">
-            <img src="./img/Pac-man-logo.png" alt="pacman" />
+        <div class="juegos__arcade">
+          <div class="juegos__arcade__div">    
 
-            <div>
-              <h3>Pac-Man 1980</h3>
-              <span>Atari 2600, Arcade, Android, Microsoft Windows</span>
-            </div>
-            <div>
+            <!-- Arcade Clasico-->        
+            <div class="juego__arcade" >
+              <img src="./img/arcade-clasico.png" alt="arcade__clasico" />
+              <div class="div_text">
+                <h4>Arcade Clásico</h4>
+                <span>300 juegos incluidos Medidas: 160x60x70 Pantalla: 21 pulgadas Peso: 80 kg Incluye: Manual de uso</span>
+              </div>
+               <div>
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo__arcade">$195000</h1>
+                 <div class="carrito">
+                    <a href="carrito"
+                      ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                    </a>
+                 </div>
+                </div>
+              </div>  
+            </div>    
+  
+            <!-- Arcade StreepFiter-->
+            <div class="juego__arcade">
+              <img src="./img/streetfiter.png" alt="streepfiter" />
+  
+              <div class="div_text">
+                <h4>Comando Consola Arcade </h4>
+                <span>3188 juegos incluidos Medidas: 70X30 Peso: 10 kg Incluye: HDMI + Manual + Cable 220V</span>
+              </div>
               <div>
-                <p>Disponible</p>
-                <h1 class="costo">$4000 <span>$5100</span> </h1>
-                <div class="carrito">
-                  <a  href="carrito"><img src="./img/carrito-de-compras.png" alt="carrito"> </a>
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo__arcade">$38800</h1>
+                  <div class="carrito">
+                    <a href="carrito" 
+                     ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div id="sonic">
-            <img src="./img/sonic.png" alt="sonic" />
 
-            <div>
-              <h3>Sonic the Hedgehog 1991</h3>
-              <span
-                >Android, Mega Drive, Nintendo Switch, Game Boy Advance</span
-              >
-            </div>
-            <div>
+            <!-- Arcade Pacman -->
+            <div class="juego__arcade">
+             <img src="./img/arcade-pacmanl.png" alt="arcade__pacman" />
+              <div class="div_text">
+               <h4>Arcade Pacman Original</h4>
+               <span> Medidas: 90x54x90 Peso: 45ks Incluye: 40 fichas</span>
+              </div>
               <div>
-                <p>Disponible</p>
-                <h1 class="costo">$2100 <span>$3500</span>  </h1>
-                <div class="carrito">
-                  <a  href="carrito"><img src="./img/carrito-de-compras.png" alt="carrito"> </a>
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo__arcade">$71400</h1>
+                  <div class="carrito">
+                    <a href="carrito"
+                    ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div id="mario">
-            <img src="./img/mario.png" alt="mario" />
+            <!-- Multi Arcade -->
 
-            <div>
-              <h3>Super Mario Bros 1985</h3>
-              <span>Nintendo Switch, Nintendo 3DS, Wii, Game Boy Advance</span>
-            </div>
-            <div>
+            <div class="juego__arcade">
+              <img src="./img/multiple_arcade.png" alt="multi_arcade" />
+  
+              <div class="div_text">
+                <h4>Comando Consola Arcade </h4>
+                <span>3000 juegos incluidos Medidas: 80X70 Pantalla:32 pulgadas Incluye: HDMI + Manual + Cable 220V</span>
+              </div>
               <div>
-                <p>Disponible</p>
-                <h1 class="costo">$3100 <span>$5500</span></h1>
-                <div class="carrito">
-                  <a  href="carrito"><img src="./img/carrito-de-compras.png" alt="carrito"> </a>
-                </div>                
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo__arcade">$160000</h1>
+                  <div class="carrito">
+                    <a href="carrito" 
+                     ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- Juegos Arcade Gadnic -->
+
+            <div class="juego__arcade">
+              <img src="./img/consola gadnic.png" alt="Juegos Arcade Gadnic" />
+  
+              <div class="div_text">
+                <h4>Juegos Arcade Gadnic</h4>
+                <span>200 juegos incluidos Medidas: 64x22.5x13.5cm Peso: 7.4kg Incluye:HDMI, VGA, AUX (3,5mm), USB</span>
+              </div>
+              <div>
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo__arcade">$38800</h1>
+                  <div class="carrito">
+                    <a href="carrito" 
+                     ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini Big Fun Stuffed Plush Toys -->
+
+            <div class="juego__arcade">
+              <img src="./img/Machine Vending.png" alt="Mini Big Fun Stuffed Plush Toys" />
+  
+              <div class="div_text">
+                <h4>Mini Maquina de Peluches</h4>
+                <span> Medidas: 60cm Peso: 70kg Incluye:10 Monedas, Butones y Joystick de remplazo</span>
+              </div>
+              <div>
+                <div class="precio">
+                  <p>Disponible</p>
+                  <h1 class="costo__arcade">$20000</h1>
+                  <div class="carrito">
+                    <a href="carrito" 
+                     ><img src="./img/carrito-de-compras.png" alt="carrito" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+           
           </div>
+  
+
         </div>
+        
+          
       </section>
+
     </main>
+
+    <!-- Footer -->
+    <footer>
+
+      <div  class="titulos">        
+        <h2>Contactanos</h2> 
+        <p class="border_color"></p>
+      </div>
+
+      <div id="footer">
+        <div class="contact">
+          <div id="titulo">  
+            <h1>¡Reparaciones de todo tipo de consolas!</h1> 
+          </div>
+
+
+          <div class="contacto">
+            <div class="contacto_div">
+              <h3><i style='font-size:16px' class='fas'>&#xf5a0;</i>  Cordoba 1607 - CABA</h3>
+              <h3><i style='font-size:16px' class='fas'>&#xf3cd;</i> (+5411) 43766903</h3>
+              <h3> <i style='font-size:16px' class='far'>&#xf2b6;</i>juegosretrocordoba@gmail.com  </h3>
+              <h3><i style='font-size:16px' class='far'>&#xf274;</i> Lunes a Viernes de 9:30 a 18hs</h3>
+           </div>
+
+            <div class="contacto_div">
+              <h3><i style='font-size:16px' class='fas'>&#xf5a0;</i>  Santa Fe 200 - CABA</h3>
+              <h3><i style='font-size:16px' class='fas'>&#xf3cd;</i> (+5411) 83743743</h3>
+              <h3> <i style='font-size:16px' class='far'>&#xf2b6;</i>juegosretrosantafe@gmail.com  </h3>
+              <h3><i style='font-size:16px' class='far'>&#xf274;</i> Lunes a Sabados de 9:30 a 18hs</h3>
+            </div>
+         </div>
+
+          <div id="redes">
+            <h1>¡Siguenos!</h1>
+            <a href="https://instagram.com" target="_blank">
+              <img src="./img/instagram.png" alt="instagram" />
+            </a>
+            <a href="https://es-la.facebook.com/" target="_blank">
+               <img src="./img/facebook.png" alt="facebook"
+            /></a>
+
+           <a href="https://www.linkedin.com/" target="_blank">
+              <img src="./img/linkedin.png" alt="facebook"
+            /></a>
+         </div>
+        </div> 
+      
+          <div id="mapa">
+            <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=es&amp;q=Cordoba%201607+(Retro%20Games)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Car GPS</a></iframe></div>
+          </div>
+        
+      </div>
+    </footer>
   </body>
 </html>
