@@ -1585,6 +1585,13 @@ main {
     position: absolute;
   }
 
+  #logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 3em;
+    width: 5em;
+  }
+
   #lista {
     display: block;
     width: 13rem;
@@ -1595,6 +1602,10 @@ main {
   }
 
   /*Hero*/
+
+  .hero {
+    margin-top: 3rem;
+  }
 
   #TextoDePortada button {
     width: 44%;
@@ -1625,6 +1636,9 @@ main {
   } 
 
 }
+
+
+
 
 
  
