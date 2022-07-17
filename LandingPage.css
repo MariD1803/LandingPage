@@ -1604,6 +1604,7 @@ main {
   /*Hero*/
 
   .hero {
+    height: 13rem;
     margin-top: 3rem;
   }
 
