@@ -1601,6 +1601,11 @@ main {
     margin: 0;
   }
 
+  
+  #lista ul {
+    margin-top: 3rem;    
+  }
+
   /*Hero*/
 
   .hero {
@@ -1638,7 +1643,89 @@ main {
 
 }
 
+@media screen and (max-width: 340px) {
+  .checkbutton {
+    margin-left: 2rem;
+  }
 
+  #lista {
+    width: 8rem;
+  }
+
+  /*Hero*/
+
+  #TextoDePortada h1{
+    font-size: var(--extrasmall);
+
+  }
+
+  #TextoDePortada h3{
+    font-size: var(--tiny);
+    
+  }
+
+  #TextoDePortada p{
+    font-size: var(--tiny);
+    
+  }
+  #TextoDePortada button {
+    
+    font-size: var(--tiny);
+  }
+
+  #ImagenDePortada img {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  /*Card*/
+
+  .cards h2 {
+    display: block;
+  }
+  .cards h2 p{
+    margin-top: 0.2rem;
+  }
+
+  .card_text {
+    padding: 0.2rem;
+  }
+
+  /*Juego*/
+
+  .juego {
+    max-width: 14rem;
+  }
+
+  #juegorebaja {
+    max-width: 14rem;
+  }
+
+  /*Footer*/
+  .contacto_div {
+    font-size: var(--tiny);
+  }
+
+  .contact h1 {
+    font-size: var(--extrasmalll);
+  }
+
+  .contact {
+    width: 16rem;
+  }
+
+  #footer {
+    gap: 15px;
+  }
+  #mapa {
+   margin-right: 0.5rem;
+  }
+
+  #redes img {
+    margin: 0.2rem 0.2rem;
+    height: 1rem;
+    width: 1rem;
+  }
+}
 
 
 
