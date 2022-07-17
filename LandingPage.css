@@ -1495,6 +1495,21 @@ main {
     margin-right: 0.5em;
   }
 
+  #logo {
+    height: 3em;
+  }
+
+  #lista ul {
+    margin-top: 3rem;    
+  }
+
+  /*Hero*/
+
+  .hero {
+    height: 13rem;
+    margin-top: 3rem;
+  }
+
   
   #login img {
     margin: 0.1em 0.5em;
@@ -1575,6 +1590,9 @@ main {
   #lista{    
     display: block;
   }
+
+  
+  
 }
 
 @media screen and (max-width: 360px) {
